@@ -1,8 +1,13 @@
-.cabecalhoPrincipal .container {
+.cabecalhoPrincipal {
     border: solid;
+    position: fixed;
+    top: 0;
+}
+.container-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .img-logo{
     width: 60px;
@@ -11,13 +16,8 @@
     display: flex;
 }
 
-.cabecalhoPrincipal {
-    background-color: #FFF;
-    padding: 20px 0;
-}
-
 .cabecalhoPrincipal-titulo{
-    border: solid;
+    border: solid blue;
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 20px;
@@ -29,9 +29,9 @@
 }
 
 .cabecalhoPrincipal-nav-link {
+    margin-left: .5rem;
     padding: 10px;
-    margin-bottom: 10px;
-    color: #9799A6;
+    color: var(--fonte-link);
     background-color: #FFF;
     text-decoration: none;
     transition: .5s;
@@ -153,10 +153,13 @@
     margin-bottom: 10px;
 }
 
-@media(min-width: 769px) {
-
+@media(min-width: 795px) {
+    .cabecalhoPrincipal{
+    width: 88.5%;
+    }
     .container {
-        width: 85%;
+        margin-left: 6%;
+        margin-right: 6%;
     }
 
     .subtitulo {
@@ -193,6 +196,9 @@
 }
 
 @media screen and (min-width:1024px){
+    .cabecalhoPrincipal {
+            width: 88.5%;
+        }
     /* .cabecalho{
         flex-direction: row;
         justify-content: space-between;
@@ -201,5 +207,15 @@
 }
 @media screen and (min-width: 360px) {
     
-    
+    .container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .cabecalhoPrincipal {
+        width: 93.5%;
+    }
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+    }
 }

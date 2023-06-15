@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/chamada.css">
     <link rel="stylesheet" href="css/destaques.css">
     <link rel="stylesheet" href="css/diferenciais.css">
@@ -25,25 +26,29 @@
 </head>
 
 <body>
-    <header class="cabecalhoPrincipal">
-        <div class="container">
+    <header class="cabecalhoPrincipal container">
+        <div class="container-header">
             <h1 class="cabecalhoPrincipal-titulo" id="titulo">
                 <a href="/index.html"><img class="img-logo" src="img/logo-seelertv.png" alt=""></a>
             </h1>
-    
+
             <nav class="cabecalhoPrincipal-nav">
                 <a class="cabecalhoPrincipal-nav-link" href="#titulo">PLANOS</a>
-                <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php" target="_blank">ASSISTIR ONLINE</a>
+                <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
+                    target="_blank">ASSISTIR ONLINE</a>
                 <a class="cabecalhoPrincipal-nav-link" href="#mapa-cursos">ONDE ASSISTIR</a>
                 <a class="cabecalhoPrincipal-nav-link" href="#vantagem">SOBRE NÓS</a>
                 <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app"
                     href="https://charlesantunes.github.io/Alura-html-css-basico/" target="_blank">CONTATO</a>
             </nav>
         </div>
-    
+
     </header>
 
     <main>
+        <section class="banner container">
+
+        </section>
         <section class="planos container">
             <h2 class="planos__titulo">NOSSOS PLANOS</h2>
             <ul class="planos__cartoes">
@@ -114,28 +119,34 @@
                     </address>
                 </div>
 
-                <iframe class="institucional__video" width="560" height="315" src="https://www.youtube.com/embed/UcusWFu0_Lo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
+                <iframe class="institucional__video" width="560" height="315"
+                    src="https://www.youtube.com/embed/UcusWFu0_Lo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>"
 
             </div>
         </section>
     </main>
 
-    <footer class="rodape container">
-        <ul class="rodape__social">
-            <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do Twitter"></a></li>
-            <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
-        </ul>
-        <nav>
-            <ul class="rodape__navegacao">
-                <li class="rodape__link">Sobre</li>
-                <li class="rodape__link">Planos</li>
-                <li class="rodape__link">Blog</li>
-                <li class="rodape__link">Destaques</li>
-                <li class="rodape__link">Institucional</li>
-                <li class="rodape__link">Contato</li>
+    <footer>
+        <section class="rodape container">
+
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="Ícone do Twitter"></a></li>
+                <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="Ícone do Instagram"></a></li>
             </ul>
-        </nav>
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li class="rodape__link">Sobre</li>
+                    <li class="rodape__link">Planos</li>
+                    <li class="rodape__link">Blog</li>
+                    <li class="rodape__link">Destaques</li>
+                    <li class="rodape__link">Institucional</li>
+                    <li class="rodape__link">Contato</li>
+                </ul>
+            </nav>
+        </section>
     </footer>
 
 </body>

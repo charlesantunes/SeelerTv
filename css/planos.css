@@ -1,6 +1,5 @@
 .planos {
     border: solid black;
-    background-color: var(--cinza-claro);
     
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -19,8 +18,9 @@
 
 .planos__cartoes {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cartao {
@@ -29,8 +29,8 @@
 
     background-color: var(--branco);
 
-    width: 100%;
-    max-width: 300px;
+   
+    width: 220px;
 
     margin-bottom: 2rem;
 
