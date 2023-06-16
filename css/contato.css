@@ -4,13 +4,14 @@
     align-items: center;
 
     text-align: center;
-
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-color: aqua;
+
 }
 
 .contato__titulo {
-    color: var(--cinza-escuro);
+    color: var(--branco);
     font-weight: 700;
     font-size: 1.5rem;
     font-family: var(--montserrat);
@@ -21,9 +22,37 @@
 }
 
 .contato__botao {
-    color: var(--cinza-escuro);
+    color: var(--fonte-link);
+    margin-left: .5rem;
+    padding: 10px;
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+}
+.contato__botao {
 
-    border-color: var(--cinza-escuro);
 
-    margin-top: 1rem;
+    border-radius: 5px;
+        border: 1px solid #9799A6;
+        width: auto;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+}
+.contato__botao:hover {
+    color: #FFF;
+        background-color: #9799A6;
+}
+
+
+.cabecalhoPrincipal-nav-link {
+    margin-left: .5rem;
+    padding: 10px;
+    color: var(--fonte-link);
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+
+    border-bottom: 1px solid #9799A6;
 }

@@ -17,14 +17,19 @@
     --planos-cartao-mega: #E33B3B;
 
     --montserrat: 'Montserrat', sans-serif;
+    --fonte-texto: font-family: 'Raleway', sans-serif;
 }
-
-body{background-image: url(../img/background-tv.gif);
+html{
+     scroll-behavior: smooth; /*desce a barra suavemente */
+}
+body{
+    background-image: url(../img/background-tv.gif);
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    margin: 0 auto;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 .botao{
     display: block;

@@ -2,14 +2,16 @@
     border: solid black;
     
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    font-family: var(--fonte-texto);
+    color: blue;
+    
 }
 
 .planos__titulo {
-    color: var(--cinza-escuro);
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: var(--montserrat);
+    font-weight: bolder;
+    font-size: 2rem;
+    color: white;
     text-transform: uppercase;
     text-align: center;
 
@@ -30,11 +32,11 @@
     background-color: var(--branco);
 
    
-    width: 220px;
+    width: 250px;
 
     margin-bottom: 2rem;
 
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 10px 2px #00000010;
 }
 

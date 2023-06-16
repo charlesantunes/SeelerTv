@@ -12,9 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/componentes/banner.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/chamada.css">
     <link rel="stylesheet" href="css/destaques.css">
     <link rel="stylesheet" href="css/diferenciais.css">
@@ -23,23 +28,25 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/institucional.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/componentes/banner.css">
+    <link rel="stylesheet" href="css/componentes/modal.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
 </head>
 
 <body>
-    <header class="cabecalhoPrincipal container">
-        <div class="container-header">
-            <h1 class="cabecalhoPrincipal-titulo" id="titulo">
-                <a href="/index.html"><img class="img-logo" src="img/logo-seelertv.png" alt=""></a>
-            </h1>
+    <header class="cabecalhoPrincipal ">
+        <div class="container-header container">
+            <figure class="cabecalhoPrincipal-titulo" id="titulo">
+                <a href="/index.html"><img class="img-logo" src="img/logo-seelertv-sem-fundo.png" alt=""></a>
+            </figure>
 
             <nav class="cabecalhoPrincipal-nav">
-                <a class="cabecalhoPrincipal-nav-link" href="#titulo">PLANOS</a>
+                <a class="cabecalhoPrincipal-nav-link" href="#planos">PLANOS</a>
                 <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
                     target="_blank">ASSISTIR ONLINE</a>
                 <a class="cabecalhoPrincipal-nav-link" href="#mapa-cursos">ONDE ASSISTIR</a>
                 <a class="cabecalhoPrincipal-nav-link" href="#vantagem">SOBRE NÓS</a>
-                <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app"
-                    href="https://charlesantunes.github.io/Alura-html-css-basico/" target="_blank">CONTATO</a>
+                <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#contato">CONTATO</a>
             </nav>
         </div>
 
@@ -47,10 +54,36 @@
 
     <main>
         <section class="banner container">
+            <div class="noticia-banner">
+                <h1>Seller TV</h1>
+                <h5>Canais em promoção</h5>
+                <h5>Canais com tecnologia Anti-travamento</h5>
+                <h6>Servidores dedicados</h6>
+                <h6>+20.000 programações para assistir quando quiser</h6>
+                <h5>Entre em contato e solicite seu teste</h5>
+            </div>
+            <div>
+                <figure class="card-logo-carrossel">
+                    <div class="div-carrossel" id="img-carrossel">
+                        <a href="#" target="_blank"><img src="img/project/Barbearia-Alura.gif"
+                                alt="Barbearia da Alura"></a>
+                        <a href="#" target="_blank"><img src="img/project/Alurinha.gif" alt="Alurinha"></a>
+                        <a href="#" target="_blank"><img src="img/project/Alura_Peperia.gif" alt="Alura da Peperia"></a>
+                        <a href="#" target="_blank"><img src="img/project/Figma_Componentes-da-interface.gif"
+                                alt="Figma"></a>
+                        <a href="#" target="_blank"><img src="img/project/Design_system.gif" alt="Design System"></a>
+                        <a href="#" target="_blank"><img src="img/project/harry-potter.gif"
+                                alt="API do Harry Potter"></a>
+                        <a href="#" target="_blank"></a><img src="img/project/team.gif" alt="">
+                        <a href="#" target="_blank"><img src="img/project/Onu.gif" alt=""></a>
+                        <a href="#" target="_blank"><img src="img/project/Barbearia-Alura.gif" alt=""></a>
 
+                    </div>
+                </figure>
+            </div>
         </section>
-        <section class="planos container">
-            <h2 class="planos__titulo">NOSSOS PLANOS</h2>
+        <section id="planos" class="planos container">
+            <h2 class="planos__titulo">Planos em promoção por tempo limitado</h2>
             <ul class="planos__cartoes">
                 <li class="cartao cartao--start">
                     <h3 class="cartao__titulo">MENSAL 1 TELA</h3>
@@ -59,7 +92,8 @@
                         <p class="cartao__texto">5 manutenções mensais</p>
                         <p class="cartao__texto">App SEO</p>
                         <p class="cartao__texto">1 sistema operacional</p>
-                        <a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+                        <a href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank"
+                            class="cartao__botao cartao__botao--start botao">Assinar plano</a>
                     </article>
                 </li>
                 <li class="cartao cartao--ultra">
@@ -70,7 +104,8 @@
                         <p class="cartao__texto">App SEO</p>
                         <p class="cartao__texto">4 sistemas operacionais</p>
                         <p class="cartao__texto">24h de atendimento</p>
-                        <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+                        <a href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank"
+                            class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
                     </article>
                 </li>
                 <li class="cartao cartao--mega">
@@ -80,17 +115,8 @@
                         <p class="cartao__texto">10 manutenções mensais</p>
                         <p class="cartao__texto">App SEO</p>
                         <p class="cartao__texto">2 sistemas operacionais</p>
-                        <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
-                    </article>
-                </li>
-                <li class="cartao cartao--mega">
-                    <h3 class="cartao__titulo">SEMESTRAL 2 TELAS</h3>
-                    <p class="cartao__preco"><em>R$ 210</em></p>
-                    <article class="cartao__conteudo">
-                        <p class="cartao__texto">10 manutenções mensais</p>
-                        <p class="cartao__texto">App SEO</p>
-                        <p class="cartao__texto">2 sistemas operacionais</p>
-                        <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
+                        <a href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank"
+                            class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
                     </article>
                 </li>
             </ul>
@@ -99,8 +125,36 @@
         <section class="contato container">
             <h2 class="contato__titulo">Contato</h2>
             <p>Entre em contato com a gente</p>
-            <a href="contato.html" class="contato__botao botao">Entre em contato</a>
+            <a class="contato__botao botao">Entre em contato</a>
         </section>
+
+        <nav class="nav-botao">
+
+            <button id="open-modal"><a href="#" target="_blank" rel="noopener noreferrer"></a>
+                Mensagem</button>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="modal-header">
+                    <h2>Deixe sua mensagem</h2>
+                    <button id="close-modal" class="btn-close">X</button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                        <label for="">Mensagem</label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"
+                            required></textarea>
+                        <button type="submit">Enviar</button>
+
+                        <input type="hidden" name="accessKey" value="6ae23175-f796-4dcf-8904-4b23fa5c8d1e">
+                        <input type="hidden" name="redirectTo" value="https://charlesantunes.github.io/Portfolio/">
+                    </form>
+                </div>
+            </div>
+        </nav>
 
         <section class="institucional container">
             <h2 class="institucional__titulo">Escolhinha Abraço Fraterno</h2>
@@ -126,10 +180,13 @@
 
             </div>
         </section>
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
     </main>
 
     <footer>
-        <section class="rodape container">
+        <section class="rodape">
 
             <ul class="rodape__social">
                 <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="Ícone do Facebook"></a></li>
@@ -143,12 +200,13 @@
                     <li class="rodape__link">Blog</li>
                     <li class="rodape__link">Destaques</li>
                     <li class="rodape__link">Institucional</li>
-                    <li class="rodape__link">Contato</li>
+                    <li class="rodape__link" id="contato">Contato</li>
                 </ul>
             </nav>
         </section>
     </footer>
 
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
