@@ -23,7 +23,10 @@ html{
      scroll-behavior: smooth; /*desce a barra suavemente */
 }
 body{
-    background-image: url(../img/background-tv.gif);
+    background-image: url(../img/backgroud/background-tv7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
     background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
 }

@@ -1,16 +1,21 @@
 .banner{
     padding-top: 6rem;
-    height: 475px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
 .noticia-banner{
-    border-radius: 10px;
     font-family: var(--fonte-texto);
-    background-color: aliceblue;
     font-weight: bold;
     text-align: center;
     color: blue;
+    width: 30vw;
+
+    background-color: #FFF;
+    opacity: 0.9;
+    border-radius: 8px;
+    border: outset 1px Darkgray;
+    border-width: 5px;
 }
 
 .container-carrossel {
@@ -22,10 +27,11 @@
 .card-logo-carrossel {
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    width: 60vw;
+    width: 55vw;
     height: auto;
     margin: .5rem auto;
     border-radius: 6px;
+    
 }
 
 .div-carrossel {
@@ -36,7 +42,7 @@
 
 .div-carrossel img {
     object-fit: cover;
-    width: 60vw;
+    width: 55vw;
     height: auto;
     border-radius: 6px;
 

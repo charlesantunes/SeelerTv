@@ -29,7 +29,13 @@
     display: flex;
     flex-direction: column;
 
-    background-color: var(--branco);
+    background-color: #FFF;
+        opacity: 0.9;
+        margin-top: 1.5vh;
+        margin-bottom: 2.1vh;
+        border-radius: 8px;
+        border: outset 1px Darkgray;
+        border-width: 5px;
 
    
     width: 250px;

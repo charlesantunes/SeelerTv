@@ -1,12 +1,24 @@
+.sec-contato{
+    display: flex;
+    justify-content: center;
+}
 .contato {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 296px;
+    height: 250px;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: aqua;
+    
+    background-color: #FFF;
+    opacity: 0.9;
+    margin-top: 1.5vh;
+    margin-bottom: 2.1vh;
+    border-radius: 8px;
+    border: outset 1px Darkgray;
+    border-width: 5px;
 
 }
 
@@ -56,3 +68,5 @@
 
     border-bottom: 1px solid #9799A6;
 }
+/*==================*/
+

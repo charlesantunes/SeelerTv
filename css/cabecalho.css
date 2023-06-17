@@ -64,17 +64,6 @@
     position: relative;
 }
 
-.conteudoPrincipal-cursos-link a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 .conteudoPrincipal-cursos-link:hover {
     box-shadow: 4px 4px 4px #CCC;
@@ -94,10 +83,13 @@
         padding: .5rem 0;
     }
     .cabecalhoPrincipal-nav-link {
-        border-radius: 5px;
-        border: 1px solid #9799A6;
-        width: auto;
-        margin: 0 0 0 10px;
+    background-color: #FFF;
+    opacity: 0.9;
+    margin-top: 1.5vh;
+    margin-bottom: 2.1vh;
+    border-radius: 8px;
+    border: outset 1px Darkgray;
+    border-width: 2px;
     }
 
     .cabecalhoPrincipal-nav-link:hover {

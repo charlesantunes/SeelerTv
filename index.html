@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/institucional.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/componentes/botao.css">
     <link rel="stylesheet" href="css/componentes/banner.css">
     <link rel="stylesheet" href="css/componentes/modal.css">
     <link rel="stylesheet" href="css/whatsapp.css">
@@ -44,7 +45,7 @@
                 <a class="cabecalhoPrincipal-nav-link" href="#planos">PLANOS</a>
                 <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
                     target="_blank">ASSISTIR ONLINE</a>
-                <a class="cabecalhoPrincipal-nav-link" href="#mapa-cursos">ONDE ASSISTIR</a>
+                <a class="cabecalhoPrincipal-nav-link" href="#onde-assistir">ONDE ASSISTIR</a>
                 <a class="cabecalhoPrincipal-nav-link" href="#vantagem">SOBRE NÓS</a>
                 <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#contato">CONTATO</a>
             </nav>
@@ -122,63 +123,109 @@
             </ul>
         </section>
 
-        <section class="contato container">
-            <h2 class="contato__titulo">Contato</h2>
-            <p>Entre em contato com a gente</p>
-            <a class="contato__botao botao">Entre em contato</a>
+        <section class="sec-contato">
+            <section class="contato container">
+                <h2 class="contato__titulo">Contato</h2>
+                <p>Entre em contato com a gente</p>
+
+                <nav class="nav-botao">
+
+                    <button id="open-modal"><a href="#" target="_blank" rel="noopener noreferrer"></a>
+                        Mensagem</button>
+                    <div id="fade" class="hide"></div>
+                    <div id="modal" class="hide">
+                        <div class="modal-header">
+                            <h2>Deixe sua mensagem</h2>
+                            <button id="close-modal" class="btn-close">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+                                <label for="name">Nome</label>
+                                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off"
+                                    required>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off"
+                                    required>
+                                <label for="">Mensagem</label>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"
+                                    required></textarea>
+                                <button type="submit">Enviar</button>
+
+                                <input type="hidden" name="accessKey" value="6ae23175-f796-4dcf-8904-4b23fa5c8d1e">
+                                <input type="hidden" name="redirectTo"
+                                    value="https://charlesantunes.github.io/Portfolio/">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+            </section>
         </section>
 
-        <nav class="nav-botao">
 
-            <button id="open-modal"><a href="#" target="_blank" rel="noopener noreferrer"></a>
-                Mensagem</button>
-            <div id="fade" class="hide"></div>
-            <div id="modal" class="hide">
-                <div class="modal-header">
-                    <h2>Deixe sua mensagem</h2>
-                    <button id="close-modal" class="btn-close">X</button>
+        <section id="onde-assistir" class="institucional container">
+            <div class="smart-container">
+                <h2 class="smart-titulo">Veja como assistir seus canais</h2>
+                <div class="aparelhos">
+                    <div class="smartphone">
+                        <div class="container-aparelho">
+                            <h2 class="aparelho-titulo">Smartphones</h2>
+                            <img class="fundo-aparelho-smartphone" src="img/onde-assistir/cel-horizontal.png" alt="">
+
+                            <iframe class="tela-smartphone" width="560" height="315"
+                                src="https://www.youtube.com/embed/5FO95oVo0Bk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="tv">
+                        <div class="container-aparelho">
+                            <h2 class="aparelho-titulo">Smart TV</h2>
+                            <img class="fundo-aparelho-tv" src="img/onde-assistir/tv.png" alt="">
+
+                            <iframe class="smart-tv" width="560" height="315"
+                                src="https://www.youtube.com/embed/zDNrOhopaXY?start=106" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="tablet">
+                        <div class="container-aparelho">
+
+                            <h2 class="aparelho-titulo">Tablet</h2>
+
+                            <img class="fundo-aparelho-tablet" src="img/onde-assistir/tablet.png" alt="">
+
+                            <iframe class="tablet-tela" width="560" height="315" src="https://www.youtube.com/embed/3GPymTJhHBM?start=35" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="notebook">
+                        <div class="container-aparelho">
+
+                            <h2 class="aparelho-titulo">Notebook</h2>
+
+                            <img class="fundo-aparelho-notebook" src="img/onde-assistir/notebook.png" alt="">
+
+                            <iframe class="tela-notebook" width="560" height="315" src="https://www.youtube.com/embed/j00xDONyzBE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="modal-body">
-                    <form action="https://api.staticforms.xyz/submit" method="post">
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-                        <label for="">Mensagem</label>
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"
-                            required></textarea>
-                        <button type="submit">Enviar</button>
-
-                        <input type="hidden" name="accessKey" value="6ae23175-f796-4dcf-8904-4b23fa5c8d1e">
-                        <input type="hidden" name="redirectTo" value="https://charlesantunes.github.io/Portfolio/">
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-        <section class="institucional container">
-            <h2 class="institucional__titulo">Escolhinha Abraço Fraterno</h2>
-            <div class="institucional__conteudo">
-                <div class="institucional__informacoes institucional__informacoes--container">
-                    <p class="institucional__descricao">...</p>
-                    <address class="institucional__endereco">Rua ......</br>Vila Mariana, Cascavel
-                        <article class="institucional__contato">
-                            <p>
-                                <a href="tel:+5591981244415" class="institucional__contato-telefone">(85) 5571-2751</a>
-                                ou
-                                <a href="mailto:charleswcantunes@gmail.com"
-                                    class="institucional__contato-email">charleswcantunes@gmail.com</a>
-                            </p>
-                        </article>
-                    </address>
-                </div>
-
-                <iframe class="institucional__video" width="560" height="315"
-                    src="https://www.youtube.com/embed/UcusWFu0_Lo" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>"
-
-            </div>
         </section>
         <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank">
             <i class="fa fa-whatsapp"></i>
