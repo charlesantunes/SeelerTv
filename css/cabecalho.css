@@ -94,7 +94,7 @@
 
     .cabecalhoPrincipal-nav-link:hover {
         color: #FFF;
-        background-color: #9799A6;
+        background-color: var(--fonte-link);
     }
 
     .cabecalhoPrincipal-titulo {

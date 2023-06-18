@@ -25,10 +25,12 @@
     transform: translate(-50%, -50%);
     /*tira 50% da altura e largura do top e left */
     z-index: 6;
-    width: 500px;
+    width: 550px;
     max-width: 90%;
     padding: 1.2rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
+    height: 80%;
 }
 
 .modal-header {
@@ -62,7 +64,8 @@
 
 #close-modal {
     background-color: gray;
-    height: 30px;
+    height: 10px;
+    padding: 20px;
     text-align: center;
     border-radius: 8px;
 }
@@ -79,7 +82,9 @@
     padding: 10px 45px;
     background-color: gray;
     width: 460px;
+    height: 80%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 .modal-body form {
@@ -108,7 +113,7 @@
     outline: none;
     border: 0;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     transition: all.5s;
 }
 
@@ -116,4 +121,9 @@
 .modal-body form textarea:focus {
     transform: scale(1.03);
     border-radius: 5px;
+}
+.modal-botao{
+    display: flex;
+    justify-content: center;
+    height: 12%;
 }

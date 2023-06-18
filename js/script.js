@@ -14,7 +14,7 @@ function carrossel() {
     imgContainer.style.transform = `translateX(${-idN * 55}vw)`;
 }
 
-setInterval(carrossel, 2000);
+setInterval(carrossel, 20000);
 
 //Modal do botão contato
 const openModalBtn = document.querySelector("#open-modal");
