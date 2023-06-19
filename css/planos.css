@@ -1,6 +1,7 @@
 .planos {    
     padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: var(--fonte-texto);
     color: blue;
     

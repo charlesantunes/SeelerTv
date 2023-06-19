@@ -34,6 +34,20 @@
 
     margin: 0 .5rem .7rem;
 }
+.copy{
+    width: 50%;
+    color: var(--branco);
+    font-size: .8rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.copy span{
+    font-weight: 600;
+    cursor: pointer;
+}
+.copy span:hover{
+    color: var(--fonte-link);
+}
 
 @media screen and (min-width: 1024px) {
     .rodape {
