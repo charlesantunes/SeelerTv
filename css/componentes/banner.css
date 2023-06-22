@@ -2,6 +2,7 @@
     padding-top: 6rem;
     height: auto;
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
@@ -11,7 +12,6 @@
     text-align: center;
     color: blue;
     width: 30vw;
-
     background-color: #FFF;
     opacity: 0.9;
     border-radius: 8px;
@@ -50,27 +50,28 @@
 }
 
 .titulo-principal, .subtitulos{
+    font-family: 'Changa', sans-serif;
     color: #0e0e7b;
     font-family: var(--fonte-texto);
     font-weight: bolder;
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2vw;
 }
 .subtitulos{
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     color: var(--cinza-escuro);
 }
 .teste-botao{
-    color: #0e0e7b;
-    font-size: 1.2rem;
-    font-weight: 700;
-    width: 100%;
+    color: var(--planos-cartao-mega);
+    font-size: 1.4vw;
+    font-weight: 900;
+    width: 80%;
     align-self: center;
     padding: .75rem 2rem;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 3vw;
     text-decoration: none;
     transition: .1s;
     display: block;
@@ -85,4 +86,91 @@
     transform: translateX(3px);
     transform: translateY(3px);
     box-shadow: 0 0 #999;
+}
+
+
+@media screen and (max-width: 812px){
+    .titulo-principal{
+        width: 60%;
+        position: absolute;
+        top: 1.3rem;
+        left: 22%;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2vw;
+    }
+    
+    .subtitulos {
+        font-size: 1.3vw;
+        color: var(--cinza-escuro);
+    }    
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .card-logo-carrossel {
+        width: 91vw;
+    }
+    .div-carrossel img {
+        width: 91vw;
+    }
+    
+    .banner {
+        padding-top: 5rem;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .noticia-banner {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        display: block;
+        
+
+
+        border: solid 3px purple;
+        font-family: var(--fonte-texto);
+        font-weight: bold;
+        text-align: center;
+        color: blue;
+        width: 60vw;
+        opacity: 0.5;
+        border-radius: none;
+        border: none;
+        border-width: none;
+    }
+    h4{
+        display: none;
+    }
+    .subtitulos{
+        font-size: 2.8vw;
+        color: var(--branco);
+    }
+        .teste-botao {
+            background-color: #FFF;
+            color: var(--planos-cartao-mega);
+            font-size: 3.5vw;
+            font-weight: 900;
+            width: 100%;
+            align-self: center;
+            padding: .75rem 2rem;
+            margin: 0 auto;
+            margin-top: 3vw;
+            text-decoration: none;
+            transition: .1s;
+            display: block;
+            box-shadow: 3px 3px #999;
+        }
+}
+/* ========apagar========== */
+@media screen and (max-width: 812px) {
+    
+    
 }

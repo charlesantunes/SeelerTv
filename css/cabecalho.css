@@ -16,8 +16,31 @@
     border-radius: 25px 50px 50px 25px;
     width: 60px;
 }
-.cabecalhoPrincipal-nav {
+
+.navegacao{
     display: flex;
+}
+.botao-menu{
+    display: none;
+    width: 60px;
+    height: 56px;
+}
+.botao-menu-img{
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 56px;
+}
+.botao-menu img{
+    width: 46px;
+    height: 46px;
+}
+
+.mobile-menu{
+    display: none;
+}
+.cabecalhoPrincipal-nav button{
+    display: none;
 }
 
 .cabecalhoPrincipal-titulo{
@@ -38,9 +61,14 @@
     background-color: #FFF;
     text-decoration: none;
     transition: .5s;
+    border-radius: 8px;
     display: block;
-
-    border-bottom: 1px solid #9799A6;
+    border: outset 1px Darkgray;
+    border-width: 2px;
+}
+.cabecalhoPrincipal-nav-link:hover {
+    color: #FFF;
+    background-color: var(--fonte-link);
 }
 .conteudoPrincipal {
     margin-top: 20px;
@@ -78,9 +106,30 @@
     margin: 10px auto;
 }
 
-@media(min-width: 795px) {
-    .cabecalhoPrincipal{
-        padding: .5rem 0;
+@media screen and (max-width: 812px) {
+    .cabecalhoPrincipal {
+        width: 100%;
+        backdrop-filter: none;
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        z-index: 3;
+        padding: .5rem 0 0 0;
+    }
+    .container-header{
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal-titulo{
+        position: absolute;
+        top: .5rem;
+        left: 0;
+    }
+    
+    .cabecalhoPrincipal-nav{
+        border: solid 2 white;
+    }
+    .cabecalhoPrincipal-nav-link{
+        border: solid forestgreen;
     }
     .cabecalhoPrincipal-nav-link {
     background-color: #FFF;
@@ -97,22 +146,37 @@
         background-color: var(--fonte-link);
     }
 
-    .cabecalhoPrincipal-titulo {
-        margin: 0;
-    }
+        /* mobile   */
+
+        .botao-menucabecalhoPrincipal-nav{
+            border:  solid 2px green;
+        }
+        .navegacao {
+            display: none;
+        }            
+        .botao-menu {
+            border: solid red;
+            display: flex;
+            
+        }
+        .botao-menu img{
+            border: solid purple;
+            display: flex;
+        }
+       
+    
+        .mobile-menu {
+            border: solid blue;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* fim mobile */
 }
 
 @media screen and (max-width: 794px) {
     
-    .container{
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-    .cabecalhoPrincipal {
-        width: 93.5%;
-    }
-    .container-header{
-        display: flex;
-        justify-content: space-between;
-    }
+    
 }
