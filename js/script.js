@@ -26,6 +26,7 @@ setInterval(carrossel, 5000);
 
 //Modal do botão contato
 const openModalBtn = document.querySelector("#open-modal");
+const openModalMsg = document.querySelector("#open-modal-msg");
 const closeModalBtn = document.querySelector("#close-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
@@ -38,17 +39,19 @@ const toggleModal = () =>{ /*toogle() é uma func que se estiver habilitado um i
     [modal,fade].forEach((e)=>e.classList.toggle("hide"))
 }
 
-[openModalBtn,closeModalBtn,fade].forEach((e)=>{
+[openModalMsg,openModalBtn,closeModalBtn,fade].forEach((e)=>{
     e.addEventListener("click",()=> {toggleModal()})
 })
 
 
 // menu hamburgue
 function menuShow() {
-    let menuMobile = document.querySelector(".mobile-menu")
+    let menuMobile = document.querySelector(".ul-mobile")
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "img/menu2.png"
     } else {
         menuMobile.classList.add('open')
+        document.querySelector('.icon').src = "img/close.png"
     }
 }

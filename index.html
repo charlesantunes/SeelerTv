@@ -52,27 +52,23 @@
                     <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
                     target="_blank">ASSISTIR ONLINE</a>
                     <a class="cabecalhoPrincipal-nav-link" href="#onde-assistir">ONDE ASSISTIR</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="#vantagem">SOBRE NÓS</a>
+                    <a class="cabecalhoPrincipal-nav-link" href="#sobre">SOBRE NÓS</a>
                     <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#contato">CONTATO</a>
                 </div>
             </nav>
-            <div class="botao-menu">
-                <button class="botao-menu-img" ><img src="img/menu2.png" alt="botao menu"></button>
-            </div>
-
             <div class="mobile-menu">
-                <ul>
-                    <a class="cabecalhoPrincipal-nav-link" href="#planos">PLANOS</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
-                    target="_blank">ASSISTIR ONLINE</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="#onde-assistir">ONDE ASSISTIR</a>
-                    <a class="cabecalhoPrincipal-nav-link" href="#vantagem">SOBRE NÓS</a>
-                    <a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#contato">CONTATO</a>
-                </ul>
-                
                 <div class="botao-menu">
-                    <button class="botao-menu-img"><img src="img/menu2.png" alt="botao menu"></button>
+                    <button onclick="menuShow()" class="botao-menu-img" ><img class="icon" src="img/menu2.png" alt="botao menu"></button>
                 </div>
+
+                <ul class="ul-mobile">
+                    <a id="lista-menu-mobile" class="cabecalhoPrincipal-nav-link" href="#planos">PLANOS</a>
+                    <a id="lista-menu-mobile" class="cabecalhoPrincipal-nav-link" href="http://webglobal.vip/switchuser.php"
+                    target="_blank">ASSISTIR ONLINE</a>
+                    <a id="lista-menu-mobile" class="cabecalhoPrincipal-nav-link" href="#onde-assistir">ONDE ASSISTIR</a>
+                    <a id="lista-menu-mobile" class="cabecalhoPrincipal-nav-link" href="#sobre">SOBRE NÓS</a>
+                    <a id="lista-menu-mobile" class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#contato">CONTATO</a>
+                </ul>
             </div>
             
         </div>
@@ -156,7 +152,7 @@
             </ul>
         </section>
 
-        <section class="sec-contato">
+        <section class="sec-contato" id="contato">
             <h2 class="contato__titulo">Contato</h2>
             <section class="contato container">
                 <p class="cartao__texto">Tem dúvida?</p>
@@ -187,7 +183,7 @@
 
                                 <input type="hidden" name="accessKey" value="6ae23175-f796-4dcf-8904-4b23fa5c8d1e">
                                 <input type="hidden" name="redirectTo"
-                                    value="https://charlesantunes.github.io/Portfolio/">
+                                    value="https://seelertv.000webhostapp.com/">
                             </form>
                         </div>
                     </div>
@@ -262,6 +258,12 @@
 
                 </div>
         </section>
+        <button id="open-modal-msg">
+            <a class="msg-link" href="#" rel="noopener noreferrer">  
+                <img src="img/email-hover.png" alt="icone do email">
+            </a>
+        </button>
+        
         <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5591981244415" target="_blank">
             <i class="fa fa-whatsapp"></i>
         </a>
@@ -278,14 +280,12 @@
             <nav>
                 <ul class="rodape__navegacao">
                     <li class="rodape__link"><a href="#planos">Planos</a></li>
-                    <li class="rodape__link"><a href="http://webglobal.vip/switchuser.php" target="_blank">Assistir
-                            online</a></li>
                     <li class="rodape__link"><a href="#onde-assistir">Onde assistir</a></li>
                     <li class="rodape__link"><a href="#vantagem">Sobre</a></li>
                     <li class="rodape__link" id="contato"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <p class="copy">
+            <p class="copy" id="sobre">
                 © 2023 por <a href="https://www.linkedin.com/in/charlesantunes2022/" target="_blank"
                     rel="noopener noreferrer"><span>Charles Antunes.</span></a> Desenvolvedor full stack independente.
             </p>

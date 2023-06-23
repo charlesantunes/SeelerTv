@@ -16,7 +16,6 @@
     border-radius: 25px 50px 50px 25px;
     width: 60px;
 }
-
 .navegacao{
     display: flex;
 }
@@ -36,12 +35,17 @@
     height: 46px;
 }
 
+/* mobile */
 .mobile-menu{
+    display: none;
+}
+.ul-mobile{
     display: none;
 }
 .cabecalhoPrincipal-nav button{
     display: none;
 }
+/* =====fim mobile =====*/
 
 .cabecalhoPrincipal-titulo{
     font-weight: bold;
@@ -124,59 +128,44 @@
         top: .5rem;
         left: 0;
     }
-    
     .cabecalhoPrincipal-nav{
         border: solid 2 white;
     }
-    .cabecalhoPrincipal-nav-link{
-        border: solid forestgreen;
+    
+    /* mobile   */
+    .navegacao {
+        display: none;
     }
-    .cabecalhoPrincipal-nav-link {
-    background-color: #FFF;
-    opacity: 0.9;
-    margin-top: 1.5vh;
-    margin-bottom: 2.1vh;
-    border-radius: 8px;
-    border: outset 1px Darkgray;
-    border-width: 2px;
+    .container-header{
+        align-items: end;
     }
-
-    .cabecalhoPrincipal-nav-link:hover {
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 50%;
+    }
+    .botao-menu-img{
+        cursor: pointer;
+    }
+    .botao-menu {
+        display: flex;
+    }
+    #lista-menu-mobile {
+        background-color: #FFF;
+        opacity: 0.9;
+        margin-top: 1.5vh;
+        margin-bottom: .5vh;
+        border-radius: 8px;
+        border: outset 1px Darkgray;
+        border-width: 2px;
+    }
+    #lista-menu-mobile:hover {
         color: #FFF;
         background-color: var(--fonte-link);
     }
-
-        /* mobile   */
-
-        .botao-menucabecalhoPrincipal-nav{
-            border:  solid 2px green;
-        }
-        .navegacao {
-            display: none;
-        }            
-        .botao-menu {
-            border: solid red;
-            display: flex;
-            
-        }
-        .botao-menu img{
-            border: solid purple;
-            display: flex;
-        }
-       
-    
-        .mobile-menu {
-            border: solid blue;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-        }
-    
-        /* fim mobile */
-}
-
-@media screen and (max-width: 794px) {
-    
-    
+    .open{
+        display: flex;
+        flex-direction: column;
+    }
 }
